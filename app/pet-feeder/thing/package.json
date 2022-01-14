@@ -1,0 +1,35 @@
+{
+    "name": "pet-feeder-interface",
+    "version": "1.0.0",
+    "description": "W3C WoT interface pet feeder",
+    "main": "index.js",
+    "keywords": [
+        "wot",
+        "w3c"
+    ],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "typescript": "3.3.1",
+        "wot-typescript-definitions": "0.7.0",
+        "@types/node": "11.9.4",
+        "tslint": "5.12.1"
+    },
+    "dependencies": {
+        "@node-wot/binding-coap": "^0.7.8",
+        "@node-wot/binding-http": "^0.7.8",
+        "@node-wot/core": "^0.7.8",
+        "ajv": "^6.10.2",
+        "axios": "^0.24.0",
+        "johnny-five": "^2.1.0",
+        "node-webcam": "^0.8.0",
+        "request": "2.88.0",
+        "wot-thing-description-types": "^1.1.0-11-November-2021"
+    },
+    "scripts": {
+        "build": "tsc -b",
+        "buildAll": "npm install; tsc;",
+        "start": "node index.js",
+        "clean": "rm -rf node_modules; rm -rf dist; rm -rf package-lock.json"
+    }
+}

@@ -1,0 +1,98 @@
+.u-section-1 .u-sheet-1 {
+  min-height: 682px;
+}
+
+.u-section-1 .u-text-1 {
+  text-transform: uppercase;
+  font-family: Alatsi;
+  font-weight: 700;
+  margin: 36px auto 0;
+}
+
+.u-section-1 .u-text-2 {
+  text-transform: uppercase;
+  font-family: Alatsi;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 88px auto 0 198px;
+}
+
+.u-section-1 .u-text-3 {
+  text-transform: uppercase;
+  font-family: Alatsi;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: -26px 198px 0 auto;
+}
+
+.u-section-1 .u-text-4 {
+  margin: 49px 57px 0 643px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 377px;
+  height: 377px;
+  background-image: url("../pet-feeder/webcam.jpg");
+  background-position: 50% 50%;
+  margin: -32px auto 60px 74px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-text-4 {
+    margin-right: 0;
+    margin-left: 500px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-text-4 {
+    margin-left: 280px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-text-2 {
+    margin-left: 149px;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-right: 149px;
+  }
+
+  .u-section-1 .u-text-4 {
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 645px;
+  }
+
+  .u-section-1 .u-text-2 {
+    margin-left: 94px;
+  }
+
+  .u-section-1 .u-text-3 {
+    margin-top: 32px;
+    margin-right: 94px;
+  }
+
+  .u-section-1 .u-text-4 {
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 340px;
+    height: 340px;
+    margin-top: -164px;
+    margin-bottom: 22px;
+    margin-left: 0;
+  }
+}
+
+.texto {
+  display: flex;
+}

@@ -1,0 +1,21 @@
+{
+    "name": "pet-feeder-controller",
+    "version": "1.0.0",
+    "description": "W3C WoT controller for pet feeder",
+    "main": "index.js",
+    "keywords": [
+        "wot",
+        "w3c"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@node-wot/binding-http": "^0.7.8",
+        "@node-wot/core": "^0.7.8",
+        "axios": "^0.24.0"
+    },
+    "scripts": {
+        "start": "node index.js",
+        "clean": "rm -rf node_modules; rm -rf package-lock.json"
+    }
+}
