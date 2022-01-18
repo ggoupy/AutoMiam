@@ -212,7 +212,14 @@ export class PetFeederThing {
                         type: "boolean",
                         readOnly: true,
                         observable: true
-                    } 
+                    },
+                    last_picture: {
+                        title: "Last picture",
+                        description: "Last picture taken by the system",
+                        type: "base64",
+                        readOnly: true,
+                        observable: true
+                    }
                 },
                 actions: {
                     activate: {
@@ -294,6 +301,14 @@ export class PetFeederThing {
         this.thing.setPropertyReadHandler("presence_sensing", () => {
             return new Promise((resolve, reject) => {
                 resolve(this.hardware.is_presence_sensor_on());
+            });
+        });
+
+        //last_picture
+        this.thing.writeProperty("last_picture", "");
+        this.thing.setPropertyReadHandler("last_picture", () => {
+            return new Promise((resolve, reject) => {
+                resolve(this.pictureHandler(""));
             });
         });
     }

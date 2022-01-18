@@ -70,10 +70,16 @@ async function getInfo() {
             url: td.properties.last_activation.forms[0].href,
             headers: {"Access-Control-Allow-Origin": "*"}
         });
+        const last_picture = await axios({
+            method: 'get',
+            url: td.properties.last_picture.forms[0].href,
+            headers: {"Access-Control-Allow-Origin": "*"}
+        });
         return {
             last_activation: last_activation.data,
             food_ration: food_ration.data,
-            nb_activation: nb_activation.data
+            nb_activation: nb_activation.data,
+            last_picture: last_picture.data
         }
     }
     catch (err) {
@@ -82,12 +88,14 @@ async function getInfo() {
 }
 
 async function update_view() {
-    //Reload CSS of the image
-    const img_div = document.getElementById("camera_img");
-    img_div.style.backgroundImage = "url(../pet-feeder/thing/webcam.jpg?" + new Date().getTime() + ")";
 
-    //Pet feeder infos
     const info = await getInfo();
+
+    //Picture
+    const img = document.getElementById("camera_img");
+    img.src = `data:image/jpg;base64, ${info.last_picture}`;
+
+    //Infos
     const info_div = document.getElementById("pet-feeder_info");
     let content = "";
     if (info != undefined)

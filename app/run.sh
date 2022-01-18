@@ -8,4 +8,4 @@ gnome-terminal --window-with-profile=gasa -- bash -c 'cd pet-feeder/thing && npm
 gnome-terminal --window-with-profile=gasa -- bash -c "sleep 4 && cd pet-feeder/controller && npm run start"
 
 # Starts UI
-#firefox ui/Home.html &
+gnome-terminal --window-with-profile=gasa -- bash -c "cd ui && python3 -m http.server 2022"
