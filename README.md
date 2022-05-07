@@ -45,7 +45,7 @@ Pour exécuter le projet, il faut lancer trois modules :
 - `dog-identifier` (serveur python)
 - `pet-feeder/thing` (App Node.js)
 - `pet-feeder/controller` (App Node.js)
-- (*Optionel*) Interface web utilisateur
+- (*Optionnel*) Interface web utilisateur
 
 ## Pré-requis
 - [Python3](https://www.python.org/downloads/)
